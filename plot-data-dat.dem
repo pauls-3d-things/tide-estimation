@@ -1,0 +1,10 @@
+# Set linestyle 1 to blue (#0060ad)
+set style line 1 linecolor rgb '#0060ad' linetype 1 linewidth 2 pointtype 7 pointsize 0.5
+set style line 2 linecolor rgb '#60ad00' linetype 1 linewidth 2 pointtype 7 pointsize 0.1
+
+
+plot 'data.dat' with linespoints linestyle 1, \
+     'orig.dat' with linespoints linestyle 2
+
+
+pause -1 "Hit any key to continue"
